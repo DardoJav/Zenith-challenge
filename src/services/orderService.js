@@ -22,12 +22,6 @@ export class OrderService {
         }
       });
 
-      // for (const product of orderData.products) {
-      //   if (!product.productId || typeof product.quantity !== 'number' || product.quantity <= 0) {
-      //     throw new Error('Each product must have a valid productId and a quantity greater than 0.');
-      //   }
-      // }
-
       orderData.status = 'PENDING';
       const newOrder = await this.orderRepository.create(orderData);
 

@@ -1,5 +1,4 @@
   import order from '../models/order.js';
-  // import { createNewOrder, getOrderById, getOrderLogsById } from '../services/orderService.js';
   import { OrderService } from '../services/OrderService.js';
 
   export class OrderController {
