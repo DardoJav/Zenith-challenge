@@ -1,0 +1,32 @@
+{
+  "name": "zenith-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DardoJav/Zenith-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DardoJav/Zenith-challenge/issues"
+  },
+  "homepage": "https://github.com/DardoJav/Zenith-challenge#readme",
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.17.0",
+    "amqplib": "^0.10.5",
+    "dotenv": "^16.4.7",
+    "elasticsearch": "^16.7.3",
+    "express": "^4.21.2",
+    "ioredis": "^5.4.2",
+    "mongoose": "^8.9.5",
+    "swagger-ui-express": "^5.0.1",
+    "yamljs": "^0.3.0"
+  }
+}
