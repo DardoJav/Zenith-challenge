@@ -11,17 +11,17 @@ The application provides an API for managing orders, handling asynchronous proce
 ## Architecture
 
 - The system follows a microservices-inspired architecture using multiple technologies:
-    •	MongoDB: Stores order details and statuses.
-    •	Redis: Caches recent orders for fast retrieval.
-    •	RabbitMQ: Manages asynchronous event processing.
-    •	Elasticsearch: Stores logs for order processing tracking.
-    •	Express.js: Handles API requests and responses.
+    - MongoDB: Stores order details and statuses.
+    - Redis: Caches recent orders for fast retrieval.
+    - RabbitMQ: Manages asynchronous event processing.
+    - Elasticsearch: Stores logs for order processing tracking.
+    - Express.js: Handles API requests and responses.
 
 - The API is structured into the following layers:
-    •	Controller: Handles HTTP requests and responses.
-    •	Service: Contains the business logic.
-    •	Repository: Interacts with the database using Mongoose.
-    •	Worker: Processes asynchronous tasks using RabbitMQ.
+    - Controller: Handles HTTP requests and responses.
+    - Service: Contains the business logic.
+    - Repository: Interacts with the database using Mongoose.
+    - Worker: Processes asynchronous tasks using RabbitMQ.
 
 ## Implementation Details
 ### Order processing worker:
