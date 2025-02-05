@@ -30,17 +30,17 @@ The application provides an API for managing orders, handling asynchronous proce
 - Logs are stored in Elasticsearch for tracking.
 
 ### Layers:
-**Controller Layer**
+#### Controller Layer
 - Handles HTTP requests.
 - Validates inputs and manages responses.
-**Service Layer**
+#### Service Layer
 - Business logic for order management.
 - Delegates database operations to the repository.
 - Communicates with the worker for asynchronous processing.
-**Repository Layer**
+#### Repository Layer
 - Direct interaction with the database using Mongoose.
 - Executes queries and applies optimizations.
-**Worker Layer**
+#### Worker Layer
 - Processes background jobs using RabbitMQ.
 - Handles tasks such as indexing orders in Elasticsearch.
 
